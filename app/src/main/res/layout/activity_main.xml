@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <ImageView
+            android:id="@+id/bluetoothPower"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_bluetooth_black_24dp"
+            android:layout_margin="16dp"
+        />
+        <ImageView
+            android:id="@+id/history"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_assignment_black_24dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="16dp"
+            />
+        <ImageView
+            android:id="@+id/setAlarm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_access_alarm_black_24dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="16dp"
+            android:tint="@android:color/darker_gray"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/nameT"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_whatshot_black_24dp"
+                android:layout_margin="16dp"
+                />
+            <TextView
+                android:id="@+id/inputTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="온도 값"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                />
+            <Button
+                android:id="@+id/setTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="50dp"
+                android:text="Set"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <NumberPicker
+        android:id="@+id/picker_mintemp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        >
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:layout_gravity="center_vertical"
+            android:textSize="50dp"/>
+
+        <NumberPicker
+            android:id="@+id/picker_mintemp2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~"
+            android:textSize="30dp"
+            android:layout_gravity="center_vertical"/>
+
+        <NumberPicker
+            android:id="@+id/picker_maxtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+        </NumberPicker>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="50dp"
+            android:layout_gravity="center_vertical"/>
+
+        <NumberPicker
+            android:id="@+id/picker_maxtemp2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            >
+        </NumberPicker>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/nameH"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_beach_access_black_24dp"
+                android:layout_margin="16dp"
+            />
+            <TextView
+                android:id="@+id/inputHumid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="습도 값"
+                android:textSize="30dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="50dp"/>
+            <Button
+                android:id="@+id/setHumid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="50dp"
+                android:text="Set"
+                android:textSize="30dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <NumberPicker
+                android:id="@+id/picker_minhumid"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                >
+            </NumberPicker>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:layout_gravity="center_vertical"
+                android:textSize="50dp"/>
+
+            <NumberPicker
+                android:id="@+id/picker_minhumid2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                >
+            </NumberPicker>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="~"
+                android:textSize="30dp"
+                android:layout_gravity="center_vertical"/>
+
+            <NumberPicker
+                android:id="@+id/picker_maxhumid"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                >
+            </NumberPicker>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textSize="50dp"
+                android:layout_gravity="center_vertical"/>
+
+            <NumberPicker
+                android:id="@+id/picker_maxhumid2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                >
+            </NumberPicker>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
